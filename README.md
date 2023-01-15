@@ -77,3 +77,26 @@ const Component = () => (
 "On iOS a ScrollView with a single item can be used to allow the user to zoom content. Set up the maximumZoomScale and minimumZoomScale props and your user will be able to use pinch and expand gestures to zoom in and out."
 
 **"If you have a long list of items which cannot fit on the screen, you should use a FlatList"**
+
+
+## Using List Views
+
+Generally in React Native, you'll want to use either **FlatList** or **SectionList** to present lists of data.
+
+### FlatList
+
+"The **FlatList** component displays a scrolling list of changing, but similarly structured, data."
+
+Use **FlatList** for long lists of data, where numbers change over time.
+
+FlatList's two required props:
+
+- **data**: "source of information on list"
+- **renderItem**: "takes one item from the source and returns a formatted component to render" 
+
+* similar to map
+
+### SectionList
+
+When you want to render a set of data broken into logical sections, use **SectionList**.
+
